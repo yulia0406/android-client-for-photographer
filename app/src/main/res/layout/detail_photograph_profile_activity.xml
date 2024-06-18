@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_detailphotographprofile"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="150dp"
+        android:fontFamily="@font/laila_light"
+
+        android:text="Логин"
+        android:textSize="22sp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+
+        android:fontFamily="@font/laila_light"
+        android:gravity="center"
+        android:text="Город"
+        android:textSize="12sp"
+        android:textColor="#D5D2D2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonEdit"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewLogin" />
+
+    <TextView
+        android:id="@+id/textViewDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:fontFamily="@font/laila_light"
+
+        android:text="Описание"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonEdit"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCity" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonEdit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/textViewLogin"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:srcCompat="@drawable/baseline_edit_24" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Public"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewDesc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- <ImageView
+         android:id="@+id/imageView3"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_marginStart="44dp"
+         android:layout_marginTop="64dp"
+         android:src="@mipmap/ic_photosession"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/button5"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/adamina</item>
+        <item>@font/amita</item>
+        <item>@font/boogaloo</item>
+        <item>@font/chakra_petch_light</item>
+        <item>@font/chango</item>
+        <item>@font/cinzel_decorative</item>
+        <item>@font/gayathri</item>
+        <item>@font/laila_medium</item>
+        <item>@font/metamorphous</item>
+        <item>@font/montserrat_extralight</item>
+        <item>@font/neuton_extralight</item>
+        <item>@font/neuton_italic</item>
+        <item>@font/oldenburg</item>
+        <item>@font/paprika</item>
+        <item>@font/trispace_extralight</item>
+        <item>@font/trispace_thin</item>
+        <item>@font/ubuntu_light</item>
+        <item>@font/zcool_xiaowei</item>
+    </array>
+</resources>

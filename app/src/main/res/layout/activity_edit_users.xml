@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUsersActivity">
+
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+
+        android:text="Логин: "
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/username"
+        app:layout_constraintEnd_toStartOf="@+id/username"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:autofillHints="Логин"
+        android:hint="Логин"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Почта: "
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/email"
+        android:textCursorDrawable="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="100dp"
+        android:autofillHints="Почта"
+        android:hint="Почта"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/adressText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Город: "
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/city"
+        app:layout_constraintEnd_toStartOf="@+id/city"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/city"
+        android:textCursorDrawable="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="100dp"
+        android:autofillHints="Город"
+        android:hint="Город"
+
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Телефон: "
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/phone"
+        app:layout_constraintEnd_toStartOf="@+id/phone"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/phone"
+        android:textCursorDrawable="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="110dp"
+        android:autofillHints="Номер телефона"
+        android:hint="Номер телефона"
+
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/descText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Описание: "
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/desc"
+        app:layout_constraintEnd_toStartOf="@+id/desc"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/desc"
+        android:textCursorDrawable="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="112dp"
+        android:autofillHints="Описание"
+        android:hint="Описание"
+
+        android:imeOptions="actionDone"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+
+    <TextView
+        android:id="@+id/FIOText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="ФИО: "
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/FIO"
+        app:layout_constraintEnd_toStartOf="@+id/FIO"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/FIO"
+        android:textCursorDrawable="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="100dp"
+        android:autofillHints="ФИО"
+        android:hint="ФИО"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="256dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="-50dp"
+        android:backgroundTint="@color/black"
+        android:text="Редактировать"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/FIO"
+        app:layout_constraintTop_toBottomOf="@+id/FIO"
+        app:strokeColor="#000000" />
+</androidx.constraintlayout.widget.ConstraintLayout>

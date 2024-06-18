@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_detailphotosession"
+    >
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/laila_light"
+        android:text="Название"
+        android:textAllCaps="true"
+        android:textSize="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/laila_light"
+        android:text="дата"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textDateCr"
+        app:layout_constraintTop_toTopOf="@+id/textDost" />
+
+    <TextView
+        android:id="@+id/textNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/laila_light"
+        android:text="Фото для обработки:"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toTopOf="@+id/textDateCr" />
+
+    <TextView
+        android:id="@+id/Num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="12dp"
+        android:fontFamily="@font/laila_light"
+        android:text="кол-во"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textNum"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintTop_toTopOf="@+id/textDateCr" />
+
+    <TextView
+        android:id="@+id/textDost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:fontFamily="@font/laila_light"
+        android:text="Фотограф:"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toTopOf="@+id/textName" />
+
+
+    <TextView
+        android:id="@+id/textDateCr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/laila_light"
+        android:text="Создан:"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toTopOf="@+id/textDost" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/laila_medium"
+
+        android:text="Логин"
+
+
+        app:layout_constraintStart_toEndOf="@+id/textDost"
+        app:layout_constraintTop_toTopOf="@+id/textName" />
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toTopOf="@+id/textNum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- <ImageView
+         android:id="@+id/imageView3"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_marginStart="44dp"
+         android:layout_marginTop="64dp"
+         android:src="@mipmap/ic_photosession"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/button5"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
